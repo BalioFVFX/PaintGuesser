@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_color_picker_color_width">50dp</dimen>
+    <dimen name="dialog_color_picker_color_height">50dp</dimen>
+    <dimen name="dialog_color_picker_color_margin">8dp</dimen>
+</resources>

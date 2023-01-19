@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DrawingGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lobby">Lobby</string>
+    <string name="username_hint">Username</string>
+    <string name="create_game">Create game</string>
+    <string name="join_game">Join game</string>
+    <string name="hint_host">Host IP Address</string>
+    <string name="radio_button_host">Host</string>
+    <string name="radio_button_client">Client</string>
+    <string name="button_undo">Undo</string>
+    <string name="waiting_for_other_players">Waiting for other players</string>
+    <string name="time_left">Time left:</string>
+    <string name="guess">Guess</string>
+    <string name="preparing_the_game">Preparing the game...</string>
+    <string name="other_player_guessing">Other player is guessing</string>
+    <string name="user_rating">User rating:</string>
+    <string name="game_ended">Game ended</string>
+    <string name="image_download_error">There was a problem while downloading image data</string>
+    <string name="game_title">Paint Guesser</string>
+    <string name="play">Play</string>
+    <string name="view_history">View history</string>
+    <string name="role">Role</string>
+    <string name="date">Date</string>
+    <string name="rating">Rating</string>
+    <string name="hide">Hide</string>
+    <string name="no_history">No history</string>
+    <string name="rival">Rival</string>
+    <string name="cancel_game_dialog_title">Are you sure you want to leave the game</string>
+    <string name="cancel_game_dialog_message">The progress of the game will be lost</string>
+    <string name="Ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="connection_failed">Connection failed</string>
+    <string name="practice">Practice</string>
+    <string name="service_notification_channel_name">Timer</string>
+    <string name="guesser">Guesser</string>
+    <string name="painter">Painter</string>
+</resources>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">DrawingGame</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lobby">Лоби</string>
+    <string name="username_hint">Име</string>
+    <string name="create_game">Създай игра</string>
+    <string name="join_game">Присъедини се към играта</string>
+    <string name="hint_host">Хост ип адрес</string>
+    <string name="radio_button_host">Хост</string>
+    <string name="radio_button_client">Клиент</string>
+    <string name="button_undo">Назад</string>
+    <string name="waiting_for_other_players">Изчаква се клиента</string>
+    <string name="time_left">Оставащо време:</string>
+    <string name="guess">Guess</string>
+    <string name="preparing_the_game">Играта се стартира…</string>
+    <string name="other_player_guessing">Другият играч отгатва</string>
+    <string name="user_rating">Получен рейтинг:</string>
+    <string name="game_ended">Играта приключи</string>
+    <string name="image_download_error">Възникна проблем с изтеглянето на снимката</string>
+    <string name="game_title">Paint Guesser</string>
+    <string name="play">Играй</string>
+    <string name="view_history">Виж история</string>
+    <string name="role">Роля</string>
+    <string name="date">Дата</string>
+    <string name="rating">Рейтинг</string>
+    <string name="hide">Затвори</string>
+    <string name="no_history">Няма история</string>
+    <string name="rival">Опонент</string>
+    <string name="cancel_game_dialog_title">Сигурни ли сте, че искате да напуснете играта</string>
+    <string name="cancel_game_dialog_message">Напредъка от играта ще бъде загубен.</string>
+    <string name="Ok">Добре</string>
+    <string name="cancel">Отказ</string>
+    <string name="connection_failed">Неуспешна връзка</string>
+    <string name="practice">Практика</string>
+    <string name="service_notification_channel_name">Таймер</string>
+    <string name="guesser">Guesser</string>
+    <string name="painter">Painter</string>
+</resources>

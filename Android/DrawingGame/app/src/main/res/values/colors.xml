@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="screen_shadow">#B3000000</color>
+
+    <color name="color_picker_red">#FF0000</color>
+    <color name="color_picker_dark_red">#D50E0E</color>
+    <color name="color_picker_orange">#FF7700</color>
+    <color name="color_picker_purple">#A600FF</color>
+    <color name="color_picker_pink">#FF00D5</color>
+    <color name="color_picker_green">#2AF414</color>
+    <color name="color_picker_lime">#A6FF00</color>
+    <color name="color_picker_yellow">#FFDD00</color>
+    <color name="color_picker_dark_blue">#000DFF</color>
+    <color name="color_picker_blue">#00A6FF</color>
+    <color name="color_picker_cyan">#02FFEA</color>
+    <color name="color_picker_black">#000000</color>
+    <array name="color_picker_colors">
+        <item>@color/color_picker_red</item>
+        <item>@color/color_picker_dark_red</item>
+        <item>@color/color_picker_orange</item>
+        <item>@color/color_picker_purple</item>
+        <item>@color/color_picker_pink</item>
+        <item>@color/color_picker_green</item>
+        <item>@color/color_picker_lime</item>
+        <item>@color/color_picker_yellow</item>
+        <item>@color/color_picker_dark_blue</item>
+        <item>@color/color_picker_blue</item>
+        <item>@color/color_picker_cyan</item>
+        <item>@color/color_picker_black</item>
+    </array>
+</resources>
