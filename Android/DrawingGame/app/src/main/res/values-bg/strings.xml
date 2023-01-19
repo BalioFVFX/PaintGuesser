@@ -36,4 +36,5 @@
     <string name="service_notification_channel_name">Таймер</string>
     <string name="guesser">Guesser</string>
     <string name="painter">Painter</string>
+    <string name="connecting_to_an_emulator">Свързвам се към емулатор</string>
 </resources>

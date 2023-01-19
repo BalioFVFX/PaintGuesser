@@ -53,7 +53,7 @@ public class Client {
     public void connect(@NonNull String ip, int port, String clientUsername, ConnectListener listener) {
         readExecutor.execute(() -> {
             try {
-                Log.d(TAG, "connect:");
+                Log.d(TAG, "connect:" + ip + ":" + port);
                 socket = new Socket(ip, port);
                 reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 writer = new PrintWriter(socket.getOutputStream(), true);

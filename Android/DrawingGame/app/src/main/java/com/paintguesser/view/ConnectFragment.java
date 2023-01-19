@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import com.paintguesser.App;
 import com.paintguesser.R;
 import com.paintguesser.databinding.FragmentConnectBinding;
+import com.paintguesser.network.socket.Constants;
 import com.paintguesser.network.socket.client.Client;
 import com.paintguesser.view.game.GameClientFragment;
 import com.paintguesser.view.game.GameFragment;
@@ -21,7 +22,7 @@ import com.paintguesser.view.game.GameHostFragment;
 
 public class ConnectFragment extends Fragment {
 
-    private static final int SERVER_PORT = 6000;
+    private static final int EMULATOR_SERVER_PORT = 6000;
 
     FragmentConnectBinding binding;
 
@@ -39,6 +40,7 @@ public class ConnectFragment extends Fragment {
 
         binding.radioHost.setChecked(true);
         binding.hostTextInputLayout.setVisibility(View.GONE);
+        binding.checkboxEmulator.setVisibility(View.GONE);
 
         binding.radioHost.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -46,6 +48,7 @@ public class ConnectFragment extends Fragment {
                 if (isChecked) {
                     binding.btnCreateJoinGame.setText(R.string.create_game);
                     binding.hostTextInputLayout.setVisibility(View.GONE);
+                    binding.checkboxEmulator.setVisibility(View.GONE);
                 }
             }
         });
@@ -56,6 +59,7 @@ public class ConnectFragment extends Fragment {
                 if (isChecked) {
                     binding.btnCreateJoinGame.setText(R.string.join_game);
                     binding.hostTextInputLayout.setVisibility(View.VISIBLE);
+                    binding.checkboxEmulator.setVisibility(View.VISIBLE);
                 }
             }
         });
@@ -74,14 +78,27 @@ public class ConnectFragment extends Fragment {
             }
         });
 
+        binding.checkboxEmulator.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            App.preferences.saveConnectingToEmulator(isChecked);
+        });
+
         binding.usernameEditText.setText(App.preferences.getLastUsername());
         binding.hostEditText.setText(App.preferences.getLastHost());
     }
 
     private void joinGame() {
+
+        final int port;
+
+        if (binding.checkboxEmulator.isChecked()) {
+            port = EMULATOR_SERVER_PORT;
+        } else {
+            port = Constants.SERVER_SOCKET_PORT;
+        }
+
         App.client.connect(
                 binding.hostEditText.getText().toString(),
-                SERVER_PORT,
+                port,
                 binding.usernameEditText.getText().toString(),
                 new Client.ConnectListener() {
 

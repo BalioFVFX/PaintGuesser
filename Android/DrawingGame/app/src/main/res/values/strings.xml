@@ -36,4 +36,5 @@
     <string name="service_notification_channel_name">Timer</string>
     <string name="guesser">Guesser</string>
     <string name="painter">Painter</string>
+    <string name="connecting_to_an_emulator">Connecting to an emulator</string>
 </resources>
