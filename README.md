@@ -1,5 +1,7 @@
 # Paint Guesser
 
+![Preview](https://github.com/BalioFVFX/PaintGuesser/blob/main/media/preview.gif?raw=true)
+
 ## Introduction
 
 Paint Guesser е игра за която са необходими два играча:
